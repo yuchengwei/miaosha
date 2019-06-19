@@ -1,7 +1,6 @@
 package com.geekq.miaosha.controller;
 
 import com.geekq.miaosha.common.resultbean.ResultGeekQ;
-import com.geekq.miaosha.domain.MiaoshaUser;
 import com.geekq.miaosha.service.MiaoShaUserService;
 import com.geekq.miaosha.service.MiaoshaService;
 import org.slf4j.Logger;
@@ -27,6 +26,7 @@ public class RegisterController {
     private MiaoShaUserService miaoShaUserService;
     @Autowired
     private MiaoshaService miaoshaService ;
+
     @RequestMapping("/do_register")
     public String registerIndex(){
         return "register";
